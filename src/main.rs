@@ -1,15 +1,14 @@
 use std::process::Command;
 use rand::Rng;
-//use std::io::{self, Write};
 
 fn main() {
     println!("Hi there!");
     println!("-------------------");
     for n in 1..11 {
-    println!("{:2}. {}", n, generate_random_serie());
+        println!("{:2}. {}", n, generate_random_serie());
     }
     println!("-------------------");
-    println!("~ Bye now ~~  (ᵔ◡ᵔ)/");
+    println!("~ Bye now ...  (ᵔ◡ᵔ)ﾉ");   
 }
 fn generate_random_serie() -> String {
 
@@ -40,9 +39,5 @@ fn generate_random_serie() -> String {
                 .expect("failed to execute process")
     };
     let hashedit = String::from_utf8_lossy(&output.stdout);
-    //println!("status: {:>50}", output.status);
-    //println!("stdout: {:>50}", hashedit);
-    //println!("stderr: {:>50}", String::from_utf8_lossy(&output.stderr));
-
     return format!("{} - {}", password, hashedit);
 }

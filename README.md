@@ -5,13 +5,13 @@
 
 Install Rust on your local machine, to do so please follow the official documentation
 
-https://www.rust-lang.org/learn/get-started
+[Rust get started](https://www.rust-lang.org/learn/get-started)
 
 
 ### Get a local copy using git
 
 ```bash
-git clone https://stash.mifinity.com/scm/devops/getpassword.git
+git clone https://github.com/lunarust/rust_rand_pwd.git
 ```
 
 ## Build or Run this project:
@@ -33,12 +33,9 @@ cargo build --release
 You should be able to compile and build this code on either MacOS, Lin or Windows.
 However, all tests have been performed only for Linux.
 
-Build and documentation will be created under ./target/
-I have big doubts this will ever work on Windows... 
-
 ## Features
 
-Generates a random password and shows you the hash for it.
+Generates a random password with hash.
 
 ## Contributing
 
@@ -47,4 +44,4 @@ Generates a random password and shows you the hash for it.
 
 ## Licensing
 
-not much here neither
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
